@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Dark Mode */
+.app.dark {
+  background-color: #1e1e1e;
+  color: white;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Kanban Board */
+.kanban {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+/* Column Styling */
+.column {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 280px;
+  max-width: 300px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.app.dark .column {
+  background: #333;
+}
+
+/* Header */
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Task Button */
+.add-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Task Styling */
+.task {
+  background: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+  transition: background 0.3s ease;
+  gap: 10px;
+}
+
+.app.dark .task {
+  background: #555;
+}
+
+/* Edit Input */
+.task input {
+  border: none;
+  font-size: 14px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+/* Task Actions */
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+/* Edit Button */
+.edit-btn {
+  background: none;
+  border: none;
+  color: blue;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Dark Mode Toggle */
+.toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
